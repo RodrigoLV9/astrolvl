@@ -1,0 +1,44 @@
+---
+
+---
+
+<header class="header">
+    <div class="header__logo">
+        <div class="header__logo-img"></div>
+        <p>Astro LvL</p>
+    </div>
+    <nav class="header__nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<style>
+    .header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__logo{
+        display:flex;
+        align-items: center;
+    }
+    .header__logo-img{
+        width:130px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: blueviolet;
+    }
+    .header__nav ul{
+        display:flex;
+        align-items: center;
+        justify-content:space-evenly;
+        width:400px;
+    }
+    .header__nav ul>li{
+        list-style: none;
+    }
+</style>
