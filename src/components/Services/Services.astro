@@ -1,0 +1,27 @@
+---
+    import {Card} from './Card.jsx';
+---
+<section class="services">
+    <h2>Services</h2>
+    <div class="services__cards">
+        <Card/>
+        <Card/>
+        <Card/>
+    </div>
+</section>
+<style>
+    .services{
+        margin:70px auto;
+        width:900px
+    }
+    .services>h2{
+        text-align:center;
+        font-size:1.8rem;
+        margin:20px 0
+    }
+    .services__cards{
+        display:flex;
+        align-items:center;
+        justify-content:space-around
+    }
+</style>
