@@ -1,16 +1,26 @@
 ---
-import InfoRightCard from "./InfoRight_Card.astro";
-
+import {InfoRight_Card} from "./InfoRight_Card.jsx";
 
 ---
-<div class="InfoRight">
-    <h4>¿Cómo trabajamos?</h4>
-    <div class="InfoRight__cards">
-        <InfoRightCard></InfoRightCard>
-        <InfoRightCard></InfoRightCard>
-        <InfoRightCard></InfoRightCard>
-        <InfoRightCard></InfoRightCard>
-        <InfoRightCard></InfoRightCard>
+<div class="infoRight">
+    <h3>¿Cómo trabajamos?</h3>
+    <div class="infoRight__cards">
+        <InfoRight_Card/>
+        <InfoRight_Card/>
+        <InfoRight_Card/>
+        <InfoRight_Card/>
+        <InfoRight_Card/>
     </div>
-    
 </div>
+<style>
+    .infoRight{
+
+    }
+    .infoRight>h3{
+        font-size:1.3rem;
+        margin:20px 0
+    }
+    .infoRight__cards{
+        
+    }
+</style>

@@ -1,0 +1,19 @@
+.card{
+    width:400px;
+    margin:15px 0
+}
+.card>p{
+    color:rgb(20, 20, 20);
+}
+.card__header{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    margin:5px 0;
+}
+.card__header-icon{
+    font-size: 1.3rem;
+}
+.card__header>h4{
+    
+}
