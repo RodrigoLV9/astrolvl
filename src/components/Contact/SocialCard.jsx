@@ -1,5 +1,5 @@
 import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
-
+import '../../styles/socialCard.css'
 export const SocialCard=()=>{
     return(
         <div className='socialCard'>

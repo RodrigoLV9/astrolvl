@@ -13,6 +13,55 @@
             <label for="message">Mensaje</label>
             <textarea id="message" name="message" required></textarea>
         </div>
-        <button type="button">Enviar</button>
+        <button type="button" class="form__button">Enviar</button>
     </form>
 </div>
+<style>
+    .contactLeft{
+        width:500px;
+
+    }
+    .contactLeft form{
+
+    }
+    .form__group{
+        margin:20px 0;
+        display:flex;
+        flex-direction: column;
+    }
+    .form__group label{
+        padding:10px 0
+    }
+    .form__group input{
+        padding:10px;
+        border:none;
+        outline: none;
+        background-color:transparent;
+        border-radius: 3px;
+        border:1px solid #acacac;
+        font-size:1rem
+    }
+    .form__group textarea{
+        height:70px;
+        resize: none;
+        outline:none;
+        padding:10px;
+        border-radius: 3px;
+        border:1px solid #acacac;
+        font-size:1rem
+    }
+    .form__button{
+        width:130px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius:20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size:1.1rem;
+        transition: transform .3s ease;
+    }
+    .form__button:hover{
+        transform:scale(1.05)
+    }
+</style>

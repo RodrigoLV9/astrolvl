@@ -1,0 +1,13 @@
+.socialCard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.socialCard__icon{
+    font-size: 35px;
+    color: rgb(27, 27, 27)
+}
+.socialCard__text{
+    color: rgb(27, 27, 27);
+}
