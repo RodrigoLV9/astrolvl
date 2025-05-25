@@ -1,5 +1,5 @@
 import { IoIosArrowDown as SelectIcon } from "react-icons/io";
-
+import '../../styles/faqsCard.css'
 export const FaqsCard=()=>{
     return(
         <div className="faqsCard">
