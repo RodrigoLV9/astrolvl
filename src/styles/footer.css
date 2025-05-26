@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/public/fonts/Orbitron_font.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+footer{
+    margin-top:70px;
+}
+.footerTop{
+    display:flex;
+    align-items: start;
+    justify-content: space-around;
+    padding:50px 70px;
+    background-color: rgb(19, 19, 19);
+    color:whitesmoke
+}
+.footerTop__main{
+    width:350px;
+}
+.footerTop__main-header{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:20px;
+    font-family: 'Orbitron', sans-serif;
+}
+.footerTop__contact{
+    
+}
+.footerTop__contact ul{
+    margin-top:15px;
+
+}
+.footerTop__contact ul>li{
+    margin:20px 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
+}
+.footerTop__follow{
+
+}
+.footerTop__follow ul{
+    display: flex;
+    gap:15px
+}
+.footerTop__follow ul>li{
+    margin:15px 0;
+    list-style: none;
+}
+.footerTop__follow ul>li>a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.footerBottom{
+    padding:20px;
+    color:rgb(39, 39, 39);
+    text-align: center;
+}
+
+.footer-icon{
+    font-size:20px
+}

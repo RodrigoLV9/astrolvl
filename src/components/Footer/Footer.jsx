@@ -1,5 +1,5 @@
 import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
-
+import '../../styles/footer.css'
 export const Footer=()=>{
     return(
         <footer>
@@ -15,15 +15,15 @@ export const Footer=()=>{
                     <h2>Contact</h2>
                     <ul>
                         <li>
-                            <WhatsappIcon/>
+                            <WhatsappIcon className="footer-icon"/>
                             <p>+54 9 11 77111777</p>
                         </li>
                         <li>
-                            <WhatsappIcon/>
+                            <WhatsappIcon className="footer-icon"/>
                             <p>+54 9 11 77111777</p>
                         </li>
                         <li>
-                            <WhatsappIcon/>
+                            <WhatsappIcon className="footer-icon"/>
                             <p>+54 9 11 77111777</p>
                         </li>
                     </ul>
@@ -32,19 +32,19 @@ export const Footer=()=>{
                     <h2>Follow us</h2>
                     <ul>
                         <li>
-                            <a href='#'><WhatsappIcon/></a>
+                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
                         </li>
                         <li>
-                            <a href='#'><WhatsappIcon/></a>
+                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
                         </li>
                         <li>
-                            <a href='#'><WhatsappIcon/></a>
+                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
                         </li>
                         <li>
-                            <a href='#'><WhatsappIcon/></a>
+                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
                         </li>
                         <li>
-                            <a href='#'><WhatsappIcon/></a>
+                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
                         </li>
                     </ul>
                 </div>
