@@ -2,14 +2,14 @@
 import LogoMain from "../logoMain.astro"
 ---
 
-<header class="header">
+<header class="header" id="home">
     <LogoMain/>
     <nav class="header__nav">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/docs">Docs</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faqs">FaQs</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -23,7 +23,7 @@ import LogoMain from "../logoMain.astro"
         display:flex;
         align-items: center;
         justify-content:space-evenly;
-        width:400px;
+        width:500px;
     }
     .header__nav ul>li{
         list-style: none;
