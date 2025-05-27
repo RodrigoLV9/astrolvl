@@ -1,7 +1,6 @@
 .faqsCard{
     margin:20px 0;
-    padding:10px 0;
-    border-bottom:2px solid #9c9c9c
+    border-bottom:2px solid #9c9c9c;
 }
 .faqsCard__header{
     width:100%;
@@ -9,18 +8,41 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    
+    position:relative;
+    z-index: 2;
+    background-color: whitesmoke;
 }
 .faqsCard__header>h3{
 
 }
+.faqsCard__header-button{
+    background-color: transparent;
+    border:none
+}
 .faqsCard__header-icon{
     font-size: 26px;
-    color:#252525
+    color:#252525;
+    transition: all 0.2s ease-in-out;
+    transform:rotate(180deg);
+}
+.faqsCard__header-icon--select{
+    font-size: 26px;
+    color:#252525;
+    transition: all 0.2s ease-in-out;
+    transform:rotate(0deg)
 }
 .faqsCard__content{
+    padding:0px 0;
+    max-height:0;
+    transition: all 0.4s ease-in-out;
+    overflow:hidden;
 
 }
-.faqsCard__content>p{
+.faqsCard__content-select{
+    max-height: 100px;
+    padding:10px 0;
+    transition: all 0.4s ease-in-out;
+}
+.faqsCard >p{
     color:#252525
 }

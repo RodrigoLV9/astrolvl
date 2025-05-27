@@ -49,7 +49,7 @@ export const Footer=()=>{
                     </ul>
                 </div>
             </section>
-            <p className='footerBottom'>© 2025 Disew | Agencia de diseño web en Argentina</p>
+            <p className='footerBottom'>© 2025 Astro LvL | Agencia de desarrollo web en Argentina</p>
         </footer>
     )
 }
