@@ -11,24 +11,23 @@
     position:relative;
     z-index: 2;
     background-color: whitesmoke;
+    cursor:pointer
 }
 .faqsCard__header>h3{
 
 }
-.faqsCard__header-button{
-    background-color: transparent;
-    border:none
-}
 .faqsCard__header-icon{
     font-size: 26px;
     color:#252525;
-    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+    transition: transform 0.2s ease-in-out;
     transform:rotate(180deg);
 }
 .faqsCard__header-icon--select{
     font-size: 26px;
     color:#252525;
-    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+    transition: transform 0.2s ease-in-out;
     transform:rotate(0deg)
 }
 .faqsCard__content{
