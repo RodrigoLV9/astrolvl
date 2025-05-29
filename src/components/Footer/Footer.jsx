@@ -1,5 +1,6 @@
-import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
 import '../../styles/footer.css'
+import {socialNetworks} from '../../data/SocialNetworks.jsx'
+import {mainSocialNetworks} from '../../data/SocialNetworks.jsx'
 export const Footer=()=>{
     return(
         <footer>
@@ -14,38 +15,28 @@ export const Footer=()=>{
                 <div className="footerTop__contact">
                     <h2>Contact</h2>
                     <ul>
-                        <li>
-                            <WhatsappIcon className="footer-icon"/>
-                            <p>+54 9 11 77111777</p>
-                        </li>
-                        <li>
-                            <WhatsappIcon className="footer-icon"/>
-                            <p>+54 9 11 77111777</p>
-                        </li>
-                        <li>
-                            <WhatsappIcon className="footer-icon"/>
-                            <p>+54 9 11 77111777</p>
-                        </li>
+                        {
+                            mainSocialNetworks.map((item,index)=>(
+                                <li key={index}>
+                                    {item.icon2}
+                                    <p>{item.info}</p>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div className='footerTop__follow'>
                     <h2>Follow us</h2>
                     <ul>
-                        <li>
-                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
-                        </li>
-                        <li>
-                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
-                        </li>
-                        <li>
-                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
-                        </li>
-                        <li>
-                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
-                        </li>
-                        <li>
-                            <a href='#'><WhatsappIcon className="footer-icon"/></a>
-                        </li>
+                        {
+                            socialNetworks.map((social,index)=>(
+                                <li key={index}>
+                                    <a href={social.link} target="_blank">
+                                        {social.icon}
+                                    </a>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </section>

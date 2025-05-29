@@ -1,13 +1,19 @@
 ---
 import {SocialCard} from './SocialCard.jsx';
+import {mainSocialNetworks} from '../../data/SocialNetworks.jsx'
 ---
 <div class="contactRight">
     <h3>Redes de comunicacion</h3>
     <div class="contactRight__cards">
-        <SocialCard></SocialCard>
-        <SocialCard></SocialCard>
-        <SocialCard></SocialCard>
-        <SocialCard></SocialCard>
+        {
+            mainSocialNetworks.map((item) => (
+                <SocialCard
+                    name={item.name}
+                    info={item.info}
+                    icon={item.icon1}
+                />
+            ))
+        }
     </div>
 </div>
 <style>

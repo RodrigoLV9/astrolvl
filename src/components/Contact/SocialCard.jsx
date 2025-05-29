@@ -1,12 +1,12 @@
 import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
 import '../../styles/socialCard.css'
-export const SocialCard=()=>{
+export const SocialCard=({name,info,icon})=>{
     return(
         <div className='socialCard'>
-            <WhatsappIcon className='socialCard__icon'></WhatsappIcon>
+            {icon}
             <div className='socialCard__text'>
-                <h4>Whatsapp:</h4>
-                <p>+54 9 11 7777777</p>
+                <h4>{name}: </h4>
+                <p>{info}</p>
             </div>
         </div>
     )
