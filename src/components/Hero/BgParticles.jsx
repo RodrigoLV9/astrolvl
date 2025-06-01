@@ -43,7 +43,7 @@ export const BgParticles = () => {
           value: "#19b3e5",
         },
         number: {
-          value: 150,
+          value: 100,
           density: {
             enable: true,
             area: 300,
@@ -64,7 +64,28 @@ export const BgParticles = () => {
           onHover: {
             enable: true,
             mode: "repulse",
+              parallax: {
+              enable: false
+            }
           },
+            onClick: {
+                enable: true,
+                mode: "push",
+            },
+            
+        },
+        
+      },
+      modes:{
+        repulse: {
+          distance: 50,
+            duration: 1,
+            factor: 0.5,
+            speed: 0.1,
+            maxSpeed: 0.5,  
+        },
+        push: {
+          quantity: 4,
         },
       },
       canvas: {
@@ -89,7 +110,6 @@ export const BgParticles = () => {
   return <div className="particlesWrapper" style={{ 
     width: '500px', 
     height: '500px', 
-    backgroundColor: '#1a0d2b',
     borderRadius: '8px'
   }} />;
 };

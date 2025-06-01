@@ -1,15 +1,37 @@
 ---
 import {InfoRight_Card} from "./InfoRight_Card.jsx";
 
+const infoCards=[
+  {
+    "title": "Reunión inicial",
+    "description": "Charlamos con vos para entender tus necesidades, ideas y objetivos.",
+    "icon": "handshake"
+  },
+  {
+    "title": "Planificación y propuesta",
+    "description": "Analizamos la mejor solución técnica y diseñamos una propuesta a medida.",
+    "icon": "clipboard"
+  },
+  {
+    "title": "Desarrollo",
+    "description": "Construimos tu sitio o app usando tecnologías modernas y buenas prácticas.",
+    "icon": "code"
+  },
+  {
+    "title": "Entrega y soporte",
+    "description": "Publicamos tu proyecto y te acompañamos con mantenimiento y soporte.",
+    "icon": "rocket"
+  }
+]
 ---
 <div class="infoRight">
     <h3>¿Cómo trabajamos?</h3>
     <div class="infoRight__cards">
-        <InfoRight_Card/>
-        <InfoRight_Card/>
-        <InfoRight_Card/>
-        <InfoRight_Card/>
-        <InfoRight_Card/>
+        {
+            infoCards.map((card)=>(
+                <InfoRight_Card title={card.title} description={card.description} icon={card.icon} />
+            ))
+        }
     </div>
 </div>
 <style>
