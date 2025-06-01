@@ -1,12 +1,71 @@
 ---
     import {Card} from './Card.jsx';
+    const dataServices=[
+        {
+            "title": "Landing Page",
+            "description": "Una página única, moderna y optimizada para presentar tu negocio o producto de forma efectiva.",
+            "priceRange": "USD 50 - 150",
+            "features": [
+                "Diseño responsive",
+                "Optimización de velocidad",
+                "Formulario de contacto",
+                "SEO básico",
+                "Animaciones ligeras"
+            ]
+        },
+        {
+            "title": "Sitio Web / App Web",
+            "description": "Un sitio completo y escalable con funcionalidades dinámicas y backend personalizado.",
+            "priceRange": "USD 100 - 350",
+            "features": [
+                "Diseño responsive",
+                "Carga optimizada",
+                "SEO intermedio",
+                "Panel de administración",
+                "Integración con APIs",
+                "Autenticación de usuarios",
+                "Seguridad mejorada"
+            ]
+        },
+        {
+            "title": "Tienda Online",
+            "description": "Una solución completa para vender productos o servicios en línea con pagos integrados.",
+            "priceRange": "USD 250 - 500",
+            "features": [
+                "Diseño responsive",
+                "Checkout con carrito",
+                "Pasarela de pagos",
+                "Gestión de productos",
+                "SEO avanzado",
+                "Panel de control completo",
+                "Integraciones externas",
+                "Seguridad reforzada"
+            ]
+        },
+        {
+            "title": "Mantenimiento y Optimización",
+            "description": "Mantén tu sitio funcionando al 100% con soporte, correcciones y mejoras continuas.",
+            "priceRange": "USD 20 - 100",
+            "features": [
+                "Corrección de errores",
+                "Optimización de rendimiento",
+                "Soporte técnico",
+                "Backups regulares",
+                "Actualizaciones técnicas",
+                "Mejoras continuas de SEO",
+            ]
+        }
+    ]
+
 ---
 <section class="services" id="services">
     <h2>Services</h2>
     <div class="services__cards">
-        <Card/>
-        <Card/>
-        <Card/>
+        {
+            dataServices.map((service)=>(
+                <Card title={service.title} description={service.description} price={service.priceRange} features={service.features} />
+            ))
+        }
     </div>
 </section>
 <style>

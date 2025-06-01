@@ -1,36 +1,20 @@
 import { FaCheck } from "react-icons/fa6";
 import '../../styles/services.css'
-export const Card=()=>{
+export const Card=({title,description,price, features})=>{
     return(
         <div className='servicesCard'>
-            <h4>LANDING PAGE</h4>
-            <h2>USD 150 - 400</h2>
-            <p className="servicesCard__text">Diseño ideal para comenzar tu presencia online.</p>
+            <h4>{title}</h4>
+            <h2>{price}</h2>
+            <p className="servicesCard__text">{description}</p>
             <ul className="servicesCard__list">
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
-                <li className="servicesCard__list-item">
-                    <FaCheck className="servicesCard__list-iconCheck"/>
-                    <p>Certificado SSL</p>
-                </li>
+                {
+                    features.map((feature,index)=>(
+                         <li className='servicesCard__list-item' key={index}>
+                            <FaCheck className="servicesCard__list-iconCheck"/>
+                            <p>{feature}</p>
+                         </li>
+                    ))
+                }
             </ul>
             <button className="servicesCard__button">
                 Solicitar ahora
