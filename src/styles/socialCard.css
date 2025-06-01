@@ -2,12 +2,12 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:20px;
 }
 .socialCard__icon{
     font-size: 35px;
-    color: rgb(27, 27, 27)
+    color: rgb(214, 214, 214)
 }
 .socialCard__text{
-    color: rgb(27, 27, 27);
+    color: rgb(214, 214, 214);
 }

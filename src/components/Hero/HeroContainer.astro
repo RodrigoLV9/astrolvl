@@ -1,10 +1,12 @@
 ---
 import Header from "./Header.astro"
 import Hero from "./Hero.astro"
+import {BgParticles} from './BgParticles.jsx'
 ---
 <section class='heroContainer'>
     <Header/>
     <Hero/>
+    <BgParticles client:load />
     <div class="hero__carousel">
         <p>Rendimiento</p>
         <p>UX/UI</p>

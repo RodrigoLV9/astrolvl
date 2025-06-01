@@ -1,7 +1,7 @@
 .servicesCard{
     text-align:center;
     width:250px;
-    border:1px solid black;
+    border:1px solid rgb(151, 151, 151);
     border-radius:10px;
     padding:10px 15px
 }
@@ -31,7 +31,6 @@
 }
 .servicesCard__button{
     background-color:royalblue;
-    color:white;
     font-size:1.1rem;
     padding:10px 20px;
     border-radius:20px;
