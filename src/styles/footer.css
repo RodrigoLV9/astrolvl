@@ -30,6 +30,7 @@ footer{
 }
 .footerTop__contact ul{
     margin-top:15px;
+    
 
 }
 .footerTop__contact ul>li{
@@ -42,12 +43,16 @@ footer{
 .footerTop__follow{
 
 }
+.footerTop__follow h2{
+    margin-bottom:20px;
+}
 .footerTop__follow ul{
+    width:150px;
     display: flex;
+    flex-wrap: wrap;
     gap:15px
 }
 .footerTop__follow ul>li{
-    margin:15px 0;
     list-style: none;
 }
 .footerTop__follow ul>li>a{

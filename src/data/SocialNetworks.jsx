@@ -18,9 +18,9 @@ export const socialNetworks=[
         'icon': <TiktokIcon className="footer-icon" />
     },
     {
-        'name':'Threads',
-        'link':'https://www.threads.com/@agenciaweb_astrolvl',
-        'icon': <ThreadsIcon className="footer-icon" />
+        'name':'Linkedin',
+        'link':'https://www.linkedin.com/in/astro-lvl-agencia-de-desarrollo-digital-b19716368/',
+        'icon': <LinkedinIcon className="footer-icon" />
     },
     {
         'name':'Youtube',
@@ -33,11 +33,10 @@ export const socialNetworks=[
         'icon': <TwitterIcon className="footer-icon" />
     },
     {
-        'name':'Linkedin',
-        'link':'https://www.linkedin.com/in/astro-lvl-agencia-de-desarrollo-digital-b19716368/',
-        'icon': <LinkedinIcon className="footer-icon" />
+        'name':'Threads',
+        'link':'https://www.threads.com/@agenciaweb_astrolvl',
+        'icon': <ThreadsIcon className="footer-icon" />
     },
-
     
 
 ]
