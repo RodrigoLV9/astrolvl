@@ -2,7 +2,7 @@
     import {Card} from './Card.jsx';
     const dataServices=[
         {
-            "title": "Landing Page",
+            "title": "LANDING PAGE",
             "description": "Una página única, moderna y optimizada para presentar tu negocio o producto de forma efectiva.",
             "priceRange": "USD 50 - 150",
             "features": [
@@ -10,40 +10,39 @@
                 "Optimización de velocidad",
                 "Formulario de contacto",
                 "SEO básico",
-                "Animaciones ligeras"
+                "Animaciones ligeras",
+                "Tu landing page en 5 dias"
             ]
         },
         {
-            "title": "Sitio Web / App Web",
+            "title": "SITIO WEB",
             "description": "Un sitio completo y escalable con funcionalidades dinámicas y backend personalizado.",
             "priceRange": "USD 100 - 350",
             "features": [
                 "Diseño responsive",
-                "Carga optimizada",
                 "SEO intermedio",
                 "Panel de administración",
                 "Integración con APIs",
                 "Autenticación de usuarios",
-                "Seguridad mejorada"
+                "Tu sitio web en 10 dias"
             ]
         },
         {
-            "title": "Tienda Online",
+            "title": "TIENDA ONLINE",
             "description": "Una solución completa para vender productos o servicios en línea con pagos integrados.",
             "priceRange": "USD 250 - 500",
             "features": [
                 "Diseño responsive",
-                "Checkout con carrito",
                 "Pasarela de pagos",
                 "Gestión de productos",
                 "SEO avanzado",
                 "Panel de control completo",
                 "Integraciones externas",
-                "Seguridad reforzada"
+                "Tu tienda online en 15 dias"
             ]
         },
         {
-            "title": "Mantenimiento y Optimización",
+            "title": "MANTENIMIENTO",
             "description": "Mantén tu sitio funcionando al 100% con soporte, correcciones y mejoras continuas.",
             "priceRange": "USD 20 - 100",
             "features": [
@@ -71,7 +70,7 @@
 <style>
     .services{
         margin:70px auto;
-        width:900px
+        width:1000px
     }
     .services>h2{
         text-align:center;
@@ -81,6 +80,8 @@
     .services__cards{
         display:flex;
         align-items:center;
-        justify-content:space-around
+        justify-content:space-around;
+        flex-wrap:wrap;
+        gap:20px;
     }
 </style>

@@ -1,14 +1,41 @@
 ---
 import {FaqsCard} from "./FaqsCard.jsx"
+const dataFaqs=[
+  {
+    "question": "¿Cuánto tarda en estar lista una página web?",
+    "answer": "Depende del tipo de proyecto. Una landing page puede demorar entre 3 y 7 días, mientras que un sitio web completo o una tienda online puede tardar de 1 a 3 semanas."
+  },
+  {
+    "question": "¿Qué necesito para empezar mi sitio?",
+    "answer": "Solo necesitamos una idea clara de tu negocio o producto. Nosotros te ayudamos con el resto: diseño, estructura, hosting, dominio, contenido y más."
+  },
+  {
+    "question": "¿Puedo editar mi página una vez entregada?",
+    "answer": "Sí. Ofrecemos sitios autogestionables con panel de administración, o bien puedes solicitar cambios a través de nuestro servicio de mantenimiento."
+  },
+  {
+    "question": "¿Incluyen dominio y hosting?",
+    "answer": "Podemos encargarnos de la gestión si lo necesitás. El dominio y hosting no están incluidos en el precio base, pero podemos asesorarte o gestionarlo por vos."
+  },
+  {
+    "question": "¿Aceptan pagos en cuotas o transferencias?",
+    "answer": "Sí. Aceptamos pagos por transferencia bancaria, PayPal y otras plataformas. También se pueden acordar pagos en partes según el avance del proyecto."
+  },
+  {
+    "question": "¿Pueden posicionar mi sitio en Google?",
+    "answer": "Sí. Todos nuestros planes incluyen optimización SEO básica o avanzada, dependiendo del servicio. También ofrecemos SEO técnico y asesoría adicional si lo necesitás."
+  }
+]
+
 ---
 <section class="faqs" id="faqs">
     <h2>Preguntas Frecuentes</h2>
     <div class="faqs__cards">
-        <FaqsCard client:load/>
-        <FaqsCard client:load/>
-        <FaqsCard client:load/>
-        <FaqsCard client:load/>
-        <FaqsCard client:load/>
+        {
+            dataFaqs.map((faq)=>(
+                <FaqsCard question={faq.question} answer={faq.answer} client:load/>
+            ))
+        }
     </div>
 </section>
 <style>
