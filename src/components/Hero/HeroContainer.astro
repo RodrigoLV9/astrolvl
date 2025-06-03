@@ -2,16 +2,49 @@
 import Header from "./Header.astro"
 import Hero from "./Hero.astro"
 import {BgParticles} from './BgParticles.jsx'
+const dataHeroCarousel=[
+  "Desarrollo Web",
+  "Aplicaciones",
+  "UX/UI",
+  "Diseño Responsive",
+  "Velocidad",
+  "Seguridad",
+  "Optimización",
+  "Escalabilidad",
+  "Mantenimiento",
+  "SEO"
+]
+
 ---
 <section class='heroContainer'>
     <Header/>
     <Hero/>
     <BgParticles client:load />
-    <div class="hero__carousel">
-        <p>Rendimiento</p>
-        <p>UX/UI</p>
-        <p>Responsive Design</p>
+    <div class="hero__containerCarousel">
+        
+        <div class="hero__carousel">
+        {
+            dataHeroCarousel.map((item)=>(
+                <p class='hero__carousel-p'>{item}</p>
+            ))
+        }
+        </div>
+        <div class="hero__carousel2">
+            {
+                dataHeroCarousel.map((item)=>(
+                    <p class='hero__carousel-p'>{item}</p>
+                ))
+            }
+        </div>
+        <div class="hero__carousel3">
+        {
+            dataHeroCarousel.map((item)=>(
+                <p class='hero__carousel-p'>{item}</p>
+            ))
+        }
+        </div>
     </div>
+    
 </section>
 <style>
     .heroContainer{
@@ -21,15 +54,39 @@ import {BgParticles} from './BgParticles.jsx'
         flex-direction:column;
         justify-content: space-between;
     }
-    .hero__carousel{
-        width:100%;
-        height:80px;
-        background-color:rgb(64, 2, 105);
+    .hero__containerCarousel{
+        position:relative;
+        width:max-content;
+        display:flex;
+        transform:translateX(-33%);
+        animation:slide 60s linear infinite alternate
+    }   
+    
+    .hero__carousel, .hero__carousel2, .hero__carousel3{
+        width:max-content;
+        height:100px;
+        background-color:rgba(91, 22, 105, 0.116);
         display:flex;
         align-items:center;
-        justify-content:space-around;
+        justify-content:space-between;
         color:whitesmoke;
         font-size:1.2rem;
         position:relative;
+    }
+    .hero__carousel-p{
+        display:block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:400px;
+        height: 100%;
+        margin:0 5px;
+        border-right:1px solid rgb(92, 0, 167);
+        border-left:1px solid rgb(92, 0, 167)
+    }
+    @keyframes slide{
+        100%{
+            transform:translateX(-66%)
+        }
     }
 </style>
