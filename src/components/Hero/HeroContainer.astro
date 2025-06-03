@@ -20,6 +20,7 @@ const dataHeroCarousel=[
     <Header/>
     <Hero/>
     <BgParticles client:load />
+    <div class="hero__containerCarousel-shadow"></div>
     <div class="hero__containerCarousel">
         
         <div class="hero__carousel">
@@ -53,15 +54,42 @@ const dataHeroCarousel=[
         display:flex;
         flex-direction:column;
         justify-content: space-between;
+        position:relative
     }
     .hero__containerCarousel{
-        position:relative;
         width:max-content;
         display:flex;
         transform:translateX(-33%);
         animation:slide 60s linear infinite alternate
     }   
-    
+    .hero__containerCarousel-shadow{
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100vw ;
+        height: 100px;
+        /* background-color:aqua */
+    }
+    .hero__containerCarousel-shadow::before{
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        width:200px;
+        height:100px;
+        z-index: 3;
+        background:linear-gradient(to right,rgba(0, 0, 0, 0.999),transparent);
+    }
+    .hero__containerCarousel-shadow::after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        width:200px;
+        height:100px;
+        z-index: 3;
+        background:linear-gradient(to left,rgba(0, 0, 0, 0.999),transparent);
+    }
     .hero__carousel, .hero__carousel2, .hero__carousel3{
         width:max-content;
         height:100px;
