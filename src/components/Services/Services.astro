@@ -58,7 +58,7 @@
 
 ---
 <section class="services" id="services">
-    <h2>Services</h2>
+    <h1>Services</h1>
     <div class="services__cards">
         {
             dataServices.map((service)=>(
@@ -71,10 +71,13 @@
     .services{
         padding:100px 0;
     }
-    .services>h2{
+    .services>h1{
         text-align:center;
         font-size:3rem;
-        margin-bottom:70px
+        margin-bottom:70px;
+        background:linear-gradient(to left, rgb(150, 1, 150), rgb(0, 114, 207));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
     .services__cards{
         display:flex;
