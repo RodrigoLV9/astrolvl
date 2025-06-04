@@ -47,10 +47,15 @@ footer{
 }
 .footerTop__follow ul>li{
     list-style: none;
+    transition: all .3s
+}
+.footerTop__follow ul>li:hover{
+    transform:scale(1.2);
 }
 .footerTop__follow ul>li>a{
     color:whitesmoke;
     text-decoration: none;
+
 }
 .footerBottom{
     padding:20px;
