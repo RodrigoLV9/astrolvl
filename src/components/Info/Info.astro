@@ -4,7 +4,7 @@ import InfoRight from "./InfoRight.astro"
 ---
 
 <section class="info">
-    <h2>¿Por qué elegir nuestra agencia?</h2>
+    <h1>¿Por qué elegir nuestra agencia?</h1>
     <h3>A continuación te contamos por qué somos la mejor agencia de diseño de páginas web.</h3>
     <div class="info__content">
         <InfoLeft/>
@@ -14,14 +14,19 @@ import InfoRight from "./InfoRight.astro"
 <style>
     .info{
         text-align:center; 
-        margin-top:70px;
+        padding:70px 0 70px 0;
+        background-color: rgb(255, 255, 255);
+        color:black;
     }
-    .info>h2{
+    .info>h1{
         margin:20px 0;
-        font-size:1.7rem
+        font-size:3rem
+    }
+    .info>h3{
+        color:rgb(46, 46, 46)
     }
     .info__content{
-        margin:50px 0;
+        padding:50px 0;
         display:flex;
         justify-content:center;
         text-align:start;

@@ -1,7 +1,6 @@
 .servicesCard{
     text-align:center;
-    margin:auto;
-    width:300px;
+    width:350px;
     height:min-content;
     border:1px solid rgb(151, 151, 151);
     border-radius:10px;

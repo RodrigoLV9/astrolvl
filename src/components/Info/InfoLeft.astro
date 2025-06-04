@@ -1,5 +1,5 @@
 <div class="infoLeft">
-    <h3>Quiénes somos</h4>
+    <h2>Quiénes somos</h4>
     <p>En AstroLvL transformamos ideas en experiencias digitales.
         Creamos sitios web y aplicaciones con tecnologías modernas, diseño atractivo y foco en el rendimiento.
         Ya sea que necesites una landing page, una app web o una solución completa para tu negocio, nosotros lo hacemos posible.
@@ -12,13 +12,24 @@
         width:600px;
         
     }
-    .infoLeft h3{
-        margin:20px 0;
-        font-size:1.3rem
+    .infoLeft h2{
+        font-size:1.5rem;
+        position:relative;
+        margin:0 10px
+    }
+    .infoLeft h2::before{
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;
+        left:-10px;
+        width:3px;
+        height:30px;
+        background-color:rgb(72, 8, 133);
     }
     .infoLeft p{
         width:400px;
-        color:rgb(151, 151, 151);
+        color:#54595F;
         margin-top:30px
     }
     .infoLeft__img{
