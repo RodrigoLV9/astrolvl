@@ -1,15 +1,13 @@
 import '../../styles/footer.css'
 import {socialNetworks} from '../../data/SocialNetworks.jsx'
 import {mainSocialNetworks} from '../../data/SocialNetworks.jsx'
+import {LogoMain} from '../LogoMain.jsx'
 export const Footer=()=>{
     return(
         <footer>
             <section className='footerTop'>
                 <div className="footerTop__main">
-                    <div className="footerTop__main-header">
-                        <img src="/public/images/astrolvl-logo.png" alt='logo-main' width={50} height={50}/>
-                        <h2>ASTRO LvL</h2>
-                    </div>
+                    <LogoMain/>
                     <p>Agencia de diseño web. Brindamos soluciones personalizadas para impulsar tu presencia online.</p>
                 </div>
                 <div className="footerTop__contact">

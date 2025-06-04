@@ -1,9 +1,4 @@
-<div class="header__logo">
-    <img src="/public/images/astrolvl-logo.png" alt="logo_main" class="header__logo-img" width="50" height="50"/>
-    <p>ASTRO LvL</p>
-</div>
-<style>
-    @font-face {
+ @font-face {
         font-family: "Orbitron";
         src: url("/public/fonts/Orbitron_font.ttf") format("truetype");
         font-weight: 800;
@@ -24,5 +19,8 @@
         font-size: 1.3rem;
         font-family: "Orbitron";
         font-weight:800;
+        background:linear-gradient(to left, purple, steelblue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        
     }
-</style>
