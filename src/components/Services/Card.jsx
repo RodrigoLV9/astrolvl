@@ -1,5 +1,6 @@
 import { FaCheck } from "react-icons/fa6";
 import '../../styles/services.css'
+import {ButtonContact} from '../ButtonContact'
 export const Card=({title,description,price, features})=>{
     return(
         <div className='servicesCard'>
@@ -16,9 +17,7 @@ export const Card=({title,description,price, features})=>{
                     ))
                 }
             </ul>
-            <button className="servicesCard__button">
-                Solicitar ahora
-            </button>
+            <ButtonContact/>
         </div>
     )
 }
