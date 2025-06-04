@@ -4,9 +4,11 @@ import '../styles/buttonContact.css'
 export const ButtonContact = () => {
   return (
     <button className='buttonContact'>
-        <div className='buttonContact-border'></div>
+      <div className='buttonContact__border'></div>
+      <div className='buttonContact__content'>
         <WhatsappIcon className='buttonContact__icon'/>
         <p>Contactar</p>
+      </div>
     </button>
   )
 }

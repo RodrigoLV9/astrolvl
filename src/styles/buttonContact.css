@@ -8,26 +8,40 @@
 .buttonContact{
     background-color: black;
     color:white;
+    border:none;
+    cursor:pointer;
+    position:relative;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonContact__content{
+    background-color:transparent;
+    color:white;
     border-radius:30px;
+    padding:10px 20px;
     border:none;
     display:flex;
     align-items:center;
     justify-content:center;
     gap:10px;
-    padding:10px 20px;
-    margin:20px auto;
+    margin:auto;
+    width: 100%;
+    height: 100%;
     cursor:pointer;
     position:relative;
     overflow: hidden;
 }
-.buttonContact-border{
+.buttonContact__border{
     position:absolute;
     width:100%;
     height:100%;
     background:linear-gradient(to left, rgba(79, 143, 240, 0.56), purple);
     border-radius:30px;
+    transition:box-shadow .2s
 }
-.buttonContact-border::after{
+.buttonContact__border::after{
     content:'';
     position: relative;
     display:block;
@@ -38,7 +52,7 @@
     border-radius: 20px;
     background-color: black;
 }
-.buttonContact::before{
+.buttonContact__content::before{
     content:'';
     display:block;
     position:absolute;
@@ -50,10 +64,14 @@
     transform:translateX(calc(-100% - 10px));
     transition: transform .3s ease-in-out;
 }
-.buttonContact:hover::before{
+.buttonContact__content:hover::before{
     transform: translateX(0);
+    
 }
-.buttonContact p{
+.buttonContact:hover .buttonContact__border{
+    box-shadow: 20px 0px 50px rgba(1, 134, 223, 0.37), -20px 0px 50px rgba(163, 56, 250, 0.438);
+}
+.buttonContact__content p{
     font-size:1.1rem;
     font-family:'Orbitron';
     font-weight:600;
