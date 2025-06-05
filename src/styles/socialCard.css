@@ -1,13 +1,34 @@
 .socialCard{
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap:20px;
+    background-color:rgb(17, 17, 17);
+    padding:20px;
+    width:450px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:transform .3s
+}
+.socialCard:hover{
+    transform:scale(1.03)
 }
 .socialCard__icon{
-    font-size: 35px;
-    color: rgb(214, 214, 214)
+    font-size: 2.5rem;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    
+}
+.socialCard svg path{
+    fill: url(#gradient);
 }
 .socialCard__text{
     color: rgb(214, 214, 214);
+
+}
+.socialCard__text h4{
+    color:steelblue;
+    margin-bottom:5px;
+        
 }

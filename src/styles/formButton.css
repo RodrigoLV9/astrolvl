@@ -10,6 +10,7 @@
     font-weight: bold;
     gap:15px;
     transition: all .3s;
+    cursor:pointer;
 }
 .formButton:hover{
     background-color: transparent;
