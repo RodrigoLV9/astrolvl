@@ -66,10 +66,14 @@
             ))
         }
     </div>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
 </section>
 <style>
     .services{
         padding:100px 0;
+        position:relative
     }
     .services>h1{
         text-align:center;
@@ -85,5 +89,30 @@
         justify-content:center;
         flex-wrap:wrap;
         gap:20px;
+    }
+    .circle, .circle2, .circle3{
+        width:300px;
+        height:300px;
+        border-radius:150px;
+        position:absolute;
+        z-index:-1;
+        filter:blur(100px);
+        opacity: .8;
+        /* box-shadow: 0px 0px 100px 50px gold; */
+    }
+    .circle{
+        background-color:rgb(32, 27, 65);
+        top:0;
+        left:0
+    }
+    .circle2{
+        background-color:rgb(35, 55, 71);
+        top:400px;
+        right:-100px
+    }
+    .circle3{
+        background-color:rgb(119, 55, 13);
+        bottom:100px;
+        left:-120px
     }
 </style>

@@ -2,16 +2,26 @@
     text-align:center;
     width:350px;
     height:min-content;
-    border:1px solid rgb(151, 151, 151);
+    background-color: rgba(36, 58, 105, 0.068);
+    border:1px solid rgb(25, 46, 63);
     border-radius:10px;
-    padding:10px 40px
+    padding:10px 40px;
+    position:relative;
+    z-index:3;
+    box-shadow:0px 0px 3px slateblue;
+    backdrop-filter: blur(10px);
+    overflow:hidden
 }
 .servicesCard>h4{
     text-align: start;
-    margin:5px 0
+    margin:5px 0;
+    color:steelblue
 }
 .servicesCard>h2{
-    margin:10px 0
+    margin:10px 0;
+    background:linear-gradient(to left, white,gold);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
 }
 .servicesCard>p{
     width: 200px;

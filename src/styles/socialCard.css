@@ -8,7 +8,7 @@
     width:450px;
     border-radius:10px;
     cursor:pointer;
-    transition:transform .3s
+    transition:transform .3s;
 }
 .socialCard:hover{
     transform:scale(1.03)
