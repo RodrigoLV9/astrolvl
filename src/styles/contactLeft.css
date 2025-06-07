@@ -9,9 +9,10 @@
 
 }
 .form__group{
-    margin:20px 0;
+    padding:15px 0;
     display:flex;
     flex-direction: column;
+    position: relative;
 }
 .form__group label{
     padding:10px 0
@@ -24,7 +25,8 @@
     border-radius: 3px;
     border:1px solid #acacac;
     font-size:1rem;
-    color:rgb(189, 189, 189)
+    color:rgb(189, 189, 189);
+    font-family: 'Inter', sans-serif;
     }
 .form__group textarea{
     height:70px;
@@ -35,10 +37,12 @@
     border:1px solid #acacac;
     font-size:1rem;
     background-color: transparent;
-    color:rgb(189, 189, 189)
+    color:rgb(189, 189, 189);
+    font-family: 'Inter', sans-serif;
 }
 
 .formButton{
+    margin-top:20px;
     padding:10px 30px;
     border:2px solid transparent;
     border-radius:10px;
@@ -62,4 +66,33 @@
 }
 .formButton__icon{
     font-size:1.2rem;
+}
+
+.errorMessage{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    gap:10px;
+    padding:10px 5px;
+    color:tomato;
+    font-size: .8rem;
+    position:absolute;
+    bottom:-15px;
+}
+.errorMessage__icon{
+    font-size: .9rem;
+}
+.form__group input:-webkit-autofill {
+    background-color: #121212 !important;
+    -webkit-box-shadow: 0 0 0 1000px #121212 inset !important;
+    box-shadow: 0 0 0 1000px #121212 inset !important;
+    -webkit-text-fill-color: white !important;
+}
+.form__group input:focus,
+.form__group input:valid {
+    border: 1px solid slateblue;
+}
+.form__group textarea:focus,
+.form__group textarea:valid {
+    border: 1px solid slateblue;
 }

@@ -44,7 +44,7 @@ export const ContactLeft=()=>{
                 <div className="form__group">
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" required {...register('email')}/>
-                    {errors.email && (
+                    {error?.email && (
                         <span className='errorMessage'>
                           <ErrorIcon className="errorMessage__icon"/>
                           <p>{error?.email}</p>
