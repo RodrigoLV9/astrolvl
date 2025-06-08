@@ -27,24 +27,33 @@ import {BgParticles} from '../components/Hero/BgParticles.jsx'
 
 <style is:global>
 	@font-face {
-	font-family: 'Inter';
-	src: url('/public/fonts/inter_font.ttf') format('truetype');
-	font-weight: 100 300 500 900;
-	font-style: normal; 
-	font-display: swap;
+		font-family: 'Inter';
+		src: url('/public/fonts/inter_font.ttf') format('truetype');
+		font-weight: 100 300 500 900;
+		font-style: normal; 
+		font-display: swap;
+	}
+	:root{
+		--color-main1:#2d7ec5;
+		--color-main2:#452385;
+		--bg-light1:rgb(255,255,255);
+		--bg-dark1:#09090b;
+		--color-light1:white;
+		--color-light2:rgb(192, 190, 190);
+		--color-dark1:rgb(18, 18, 18);
+		--color-dark2:rgb(48, 48, 48);
 	}
 	*{
 		margin:0;
 		padding:0;
 		box-sizing:border-box;
-		
 	}
 	body {
   		font-family: 'Inter', sans-serif;
 		position:relative;
 		z-index: 1;
-		background-color: #09090b;
-        color:white;
+		background-color: var(--bg-dark1);
+        color:var(--color-light1);
 		overflow-x: hidden;
 	}
 </style>

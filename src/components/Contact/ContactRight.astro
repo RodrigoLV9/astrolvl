@@ -22,7 +22,19 @@ import {mainSocialNetworks} from '../../data/SocialNetworks.jsx'
         
     }
     .contactRight>h3{
-       font-size:1.5rem
+       font-size:1.5rem;
+       padding-left:10px;
+       position:relative
+    }
+    .contactRight>h3::before{
+        content:'';
+        display: block;
+        width:3px;
+        height:30px;
+        background-color: var(--color-main2);
+        position:absolute;
+        left:-5px;
+        top:0;
     }
     .contactRight__cards{
         display:flex;

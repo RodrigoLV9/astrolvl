@@ -19,7 +19,7 @@
         font-size: 1.3rem;
         font-family: "Orbitron";
         font-weight:800;
-        background:linear-gradient(to left, purple, steelblue);
+        background:linear-gradient(to left, var(--color-main2), var(--color-main1));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         

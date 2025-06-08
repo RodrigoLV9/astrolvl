@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: start;
     gap:20px;
-    background-color:rgb(17, 17, 17);
+    background-color:var(--color-dark1);
     padding:20px;
     width:450px;
     border-radius:10px;
@@ -24,11 +24,11 @@
     fill: url(#gradient);
 }
 .socialCard__text{
-    color: rgb(214, 214, 214);
+    color: var(--color-light2);
 
 }
 .socialCard__text h4{
-    color:steelblue;
+    color:var(--color-main1);
     margin-bottom:5px;
         
 }

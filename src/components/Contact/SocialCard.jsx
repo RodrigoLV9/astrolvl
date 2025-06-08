@@ -5,8 +5,8 @@ export const SocialCard=({name,info,icon})=>{
             <svg width="0" height="0">
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#4682b4" />
-                        <stop offset="100%" stopColor="#800080" />
+                        <stop offset="0%" stopColor="#2d7ec5" />
+                        <stop offset="100%" stopColor="#4a2c81" />
                     </linearGradient>
                 </defs>
             </svg>

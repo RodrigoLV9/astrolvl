@@ -2,12 +2,12 @@
     width:400px;
     margin:20px 0;
     border-radius:5px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-light1);
     padding:20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
 }
 .card>p{
-    color:#54595F
+    color:var(--color-dark2)
 }
 .card__header{
     display:flex;
@@ -17,7 +17,7 @@
 }
 .card__header-icon{
     font-size: 1.3rem;
-    color:rgb(3, 57, 119)
+    color:var(--color-main1)
 }
 .card__header>h4{
     

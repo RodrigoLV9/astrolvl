@@ -7,7 +7,7 @@
 }
 .buttonContact{
     background-color: transparent;
-    color:white;
+    color:var(--color-light2);
     border:none;
     cursor:pointer;
     position:relative;
@@ -18,7 +18,6 @@
 }
 .buttonContact__content{
     background-color:transparent;
-    color:white;
     border-radius:30px;
     padding:10px 20px;
     border:none;
@@ -37,7 +36,7 @@
     position:absolute;
     width:100%;
     height:100%;
-    background:linear-gradient(to left, rgba(79, 143, 240, 0.56), purple);
+    background:linear-gradient(to left, var(--color-main1), var(--color-main2));
     border-radius:30px;
     transition:box-shadow .2s
 }
@@ -50,7 +49,7 @@
     width:calc(100% - 6px);
     height:calc(100% - 6px);
     border-radius: 20px;
-    background-color: black;
+    background-color: var(--bg-dark1);
 }
 .buttonContact__content::before{
     content:'';
@@ -60,7 +59,7 @@
     height:100%;
     border-radius: 30px;
     z-index: 1;
-    background:linear-gradient(30deg, rgb(0, 99, 248), purple);
+    background:linear-gradient(30deg, var(--color-main1), var(--color-main2));
     transform:translateX(calc(-100% - 10px));
     transition: transform .3s ease-in-out;
 }
@@ -69,7 +68,8 @@
     
 }
 .buttonContact:hover .buttonContact__border{
-    box-shadow: 20px 0px 50px rgba(1, 134, 223, 0.37), -20px 0px 50px rgba(163, 56, 250, 0.438);
+    box-shadow: 20px 0px 50px var(--color-main1), -20px 0px 50px var(--color-main2);
+    opacity: .7;
 }
 .buttonContact__content p{
     font-size:1.1rem;
@@ -77,11 +77,10 @@
     font-weight:600;
     position:relative;
     z-index: 3;
-    color:rgb(187, 187, 187)
 }
 .buttonContact__icon{
     font-size:1.7rem;
     position:relative;
     z-index: 3;
-    color:rgb(187, 187, 187)
+
 }

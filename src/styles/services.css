@@ -15,7 +15,7 @@
 .servicesCard>h4{
     text-align: start;
     margin:5px 0;
-    color:steelblue
+    color:var(--color-main1)
 }
 .servicesCard>h2{
     margin:10px 0;
@@ -26,7 +26,8 @@
 .servicesCard>p{
     width: 200px;
     font-size:.9rem;
-    margin:auto
+    margin:auto;
+    color:var(--color-light2)
 }
 .servicesCard__list{
     margin:10px auto;
