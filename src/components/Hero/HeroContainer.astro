@@ -1,6 +1,5 @@
 ---
-import Header from "./Header.astro"
-import Hero from "./Hero.astro"
+import Hero from './Hero.astro'
 import {BgParticles} from './BgParticles.jsx'
 const dataHeroCarousel=[
   "Desarrollo Web",
@@ -17,12 +16,10 @@ const dataHeroCarousel=[
 
 ---
 <section class='heroContainer'>
-    <Header/>
     <Hero/>
     <BgParticles client:load />
     <div class="hero__containerCarousel-shadow"></div>
     <div class="hero__containerCarousel">
-        
         <div class="hero__carousel">
         {
             dataHeroCarousel.map((item)=>(
@@ -51,6 +48,7 @@ const dataHeroCarousel=[
     .heroContainer{
         width:100%;
         height:100vh;
+        padding-top: 50px;
         display:flex;
         flex-direction:column;
         justify-content: space-between;
@@ -116,5 +114,8 @@ const dataHeroCarousel=[
         100%{
             transform:translateX(-66%)
         }
+    }
+    @media screen and (max-width: 768px){
+        
     }
 </style>

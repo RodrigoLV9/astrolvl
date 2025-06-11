@@ -5,7 +5,7 @@ import Services from '../components/Services/Services.astro'
 import Faqs from '../components/Faqs/Faqs.astro'
 import Contact from '../components/Contact/Contact.astro'
 import {Footer} from '../components/Footer/Footer.jsx'
-import {BgParticles} from '../components/Hero/BgParticles.jsx'
+import { Header } from "../components/Hero/Header"
 ---
 <html lang="en">
 	<head>
@@ -16,6 +16,7 @@ import {BgParticles} from '../components/Hero/BgParticles.jsx'
 		<title>Astro LvL</title>
 	</head>
 	<body>
+		<Header client:load/>
 		<HeroContainer></HeroContainer>
 		<Info></Info>
 		<Services></Services>

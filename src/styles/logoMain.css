@@ -24,3 +24,22 @@
         -webkit-background-clip: text;
         
     }
+
+    @media screen and (max-width: 768px){
+        .header__logo-img{
+            width:40px;
+            height:40px;
+        }
+        .header__logo p{
+            font-size:1.1rem
+        }
+    }
+    @media screen and (max-width:480px){
+        .header__logo-img{
+            width:30px;
+            height:30px;
+        }
+        .header__logo p{
+            font-size:1rem
+        }
+    }
