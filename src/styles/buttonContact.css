@@ -82,5 +82,22 @@
     font-size:1.7rem;
     position:relative;
     z-index: 3;
+}
 
+ @media screen and (max-width: 768px){
+    .buttonContact__content p{
+        font-size:1rem;
+    }
+    
+}
+@media screen and (max-width:480px){
+     .buttonContact__content p{
+        font-size:.8rem;
+    }
+    .buttonContact__icon{
+        font-size:1.2rem;
+    }
+    .buttonContact:hover .buttonContact__border{
+        box-shadow: 10px 0px 30px var(--color-main1), -10px 0px 30px var(--color-main2);
+    }     
 }

@@ -15,7 +15,6 @@ export const BgParticles = () => {
     });
   }, []);
   const particlesLoaded = (container) => {
-    console.log(container);
     setTimeout(() => {
       const canvas = document.querySelector('#tsparticles canvas');
       if (canvas) {

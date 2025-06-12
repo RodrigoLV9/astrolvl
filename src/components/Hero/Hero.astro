@@ -3,7 +3,7 @@ import {ButtonContact} from '../ButtonContact.jsx'
 ---
 <section class='hero'>
     <div class="hero__text">
-        <h1> <span>🚀</span>
+        <h1><span>🚀</span>
              Elevamos tu presencia digital al siguiente nivel <span>🚀</span></h1>
         <h2>Creamos sitios web, apps y soluciones personalizadas con las tecnologías más modernas. Desarrollo, mantenimiento y SEO en un solo lugar.</h2>
     </div>
@@ -38,5 +38,33 @@ import {ButtonContact} from '../ButtonContact.jsx'
         text-align:center;
         margin:auto;
         color:var(--color-light2)
+    }
+    @media screen and (max-width: 768px){
+        .hero__text{
+            width:400px;
+        }
+        .hero__text h1{
+            font-size:2.1rem;
+            margin:40px 0
+        }
+        .hero h2{
+            width:350px;
+            font-size: 1.3rem;
+            margin:40px auto
+        }
+    
+    }
+    @media screen and (max-width:480px){
+        .hero__text{
+            width:300px;
+        }
+        .hero__text h1{
+            font-size:1.6rem;
+        }
+        .hero h2{
+            width:300px;
+            font-size:.9rem;
+        }
+            
     }
 </style>

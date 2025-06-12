@@ -116,6 +116,46 @@ const dataHeroCarousel=[
         }
     }
     @media screen and (max-width: 768px){
-        
+        .hero__carousel, .hero__carousel2, .hero__carousel3{
+            height:90px;
+        }
+        .hero__carousel-p{
+            width:300px;
+        }
+        .hero__containerCarousel-shadow{
+            height: 90px;
+        }
+        .hero__containerCarousel-shadow::before{
+            width:150px;
+            height:90px;
+
+        }
+        .hero__containerCarousel-shadow::after{
+            width:150px;
+            height:90px;
+
+        }   
+    }
+    @media screen and (max-width:480px){
+        .hero__carousel, .hero__carousel2, .hero__carousel3{
+            height:70px;
+            font-size:1rem
+        }
+        .hero__carousel-p{
+            width:230px;
+        }
+        .hero__containerCarousel-shadow{
+            height: 70px;
+        }
+        .hero__containerCarousel-shadow::before{
+            width:100px;
+            height:70px;
+
+        }
+        .hero__containerCarousel-shadow::after{
+            width:100px;
+            height:70px;
+
+        }    
     }
 </style>

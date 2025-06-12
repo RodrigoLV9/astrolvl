@@ -4,7 +4,6 @@ import {useState} from 'react'
 export const FaqsCard=({question, answer})=>{
     const [select, setSelect]=useState(false)
     const handleSelect=()=>{
-        console.log("click")
         setSelect(!select)
     }
     return(
