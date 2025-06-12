@@ -34,4 +34,39 @@
     .infoLeft__img{
         margin:20px 0;
     }
+    @media screen and (max-width: 768px){
+        .infoLeft{
+            width:min-content;
+            margin:40px 0
+        }
+        .infoLeft h2{
+            font-size:1.2rem;
+        }
+        .infoLeft p{
+            width:400px;
+            font-size:1rem
+        }
+        .infoLeft__img{
+            width:300px;
+            height:230px;
+            display:block;
+            margin:20px auto
+        }
+    }
+    @media screen and (max-width:480px){
+        .infoLeft h2{
+            font-size:1.1rem;
+        }
+        .infoLeft p{
+            width:300px;
+            font-size:.9rem
+        }
+        .infoLeft__img{
+            width:280px;
+            height:160px;
+        }
+        .infoLeft h2::before{
+            height:20px;
+        } 
+    }
 </style>

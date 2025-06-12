@@ -40,7 +40,6 @@ const infoCards=[
     }
     .infoRight>h2{
         font-size:1.5rem;
-        margin:20px 0;
         position:relative;
         margin:0 10px
     }
@@ -57,5 +56,18 @@ const infoCards=[
     
     .infoRight__cards{
         
+    }
+    @media screen and (max-width: 768px){
+        .infoRight>h2{
+          font-size:1.2rem;
+        }
+    }
+    @media screen and (max-width:480px){
+        .infoRight>h2{
+          font-size:1.1rem;
+        }
+        .infoRight>h2::before{
+          height:20px;
+        }    
     }
 </style>
