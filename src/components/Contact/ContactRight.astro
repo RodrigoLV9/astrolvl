@@ -43,4 +43,18 @@ import {mainSocialNetworks} from '../../data/SocialNetworks.jsx'
         margin:40px 0;
         gap:30px
     }
+    @media screen and (max-width: 768px){
+        .contactRight>h3{
+            font-size:1.2rem;
+        }
+    }
+    @media screen and (max-width:480px){
+        .contactRight{
+            width:300px;
+
+        }
+        .contactRight>h3::before{
+            height:20px;
+        }
+    }
 </style>

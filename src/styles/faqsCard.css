@@ -52,9 +52,6 @@
     }
 }
 @media screen and (max-width:480px){
-    /* .faqsCard__header{
-        height:30px
-    } */
     .faqsCard__header>h3{
         font-size:.9rem
     }

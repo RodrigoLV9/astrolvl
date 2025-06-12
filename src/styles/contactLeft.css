@@ -1,5 +1,5 @@
 .contactLeft{
-    width:500px;
+    width:350px;
 
 }
 .contactLeft h3{
@@ -107,4 +107,66 @@
 .form__group textarea:focus,
 .form__group textarea:valid {
     border: 1px solid var(--color-main1);
+}
+@media screen and (max-width: 768px){
+    .contactLeft h3{
+        font-size:1.2rem;
+    }
+    .contactLeft h3::before{
+        height:20px;
+    }
+    .form__group input{
+        padding:7px;
+        font-size:1rem;
+    }
+    .form__group textarea{
+        height:60px;
+        padding:7px;
+        font-size:1rem;
+    }
+
+    .formButton{
+        padding:7px 25px;
+        gap:10px;
+        border-radius:7px;
+    }
+    .formButton p{
+        font-size:1.1rem
+    }
+    .formButton__icon{
+        font-size:1.1rem;
+    }
+}
+@media screen and (max-width:480px){
+    .contactLeft h3{
+        font-size:1.1rem;
+    }
+    .contactLeft{
+        width:300px
+    }
+    .form__group label{
+        padding:5px 0;
+        font-size:.9rem
+    }
+    .form__group input{
+        padding:5px;
+        font-size:.9rem;
+    }
+    .form__group textarea{
+        height:60px;
+        padding:5px;
+        font-size:.9rem;
+    }
+
+    .formButton{
+        padding:5px 20px;
+        gap:7px;
+        border-radius:5px;
+    }
+    .formButton p{
+        font-size:1rem
+    }
+    .formButton__icon{
+        font-size:1rem;
+    }
 }
