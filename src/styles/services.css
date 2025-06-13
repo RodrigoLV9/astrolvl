@@ -47,3 +47,29 @@
     color:rgb(32, 138, 32);
     font-size:.8rem
 }
+@media screen and (max-width: 920px){
+    .servicesCard{
+        width:300px
+    }
+}
+@media screen and (max-width: 768px){
+    
+
+}
+@media screen and (max-width:480px){
+    .servicesCard{
+        width:300px
+    }
+    .servicesCard>h4{
+        font-size:.8rem
+    }
+    .servicesCard>h2{
+        font-size:1.2rem
+    }
+    .servicesCard>p{
+        font-size:.8rem;
+    }
+    .servicesCard__list-item>p{
+        font-size:.8rem;
+    }
+}

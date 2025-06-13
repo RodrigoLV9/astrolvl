@@ -73,7 +73,8 @@
 <style>
     .services{
         padding:100px 0;
-        position:relative
+        position:relative;
+        overflow-x:hidden
     }
     .services>h1{
         text-align:center;
@@ -113,5 +114,19 @@
         background-color:rgba(29, 158, 94, 0.404);
         bottom:100px;
         left:-120px
+    }
+    @media screen and (max-width: 920px){
+        
+    }
+    @media screen and (max-width: 768px){
+        .services>h1{
+            font-size:2.1rem;
+        }
+        .services__cards{
+            gap:15px;
+        }
+    }
+    @media screen and (max-width:480px){
+            
     }
 </style>
