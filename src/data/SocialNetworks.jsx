@@ -44,8 +44,8 @@ export const socialNetworks=[
 export const mainSocialNetworks=[
     {
         'name':'Whatsapp',
-        'info':'+54 9 11 11111117',
-        'link':'#',
+        'info':'+54 9 11 66232246',
+        'link':'https://wa.me/5491166232246',
         'icon1': <WhatsappIcon className="socialCard__icon" />,
         'icon2': <WhatsappIcon className="footer-icon" />
     },

@@ -3,12 +3,12 @@ import '../styles/buttonContact.css'
 
 export const ButtonContact = () => {
   return (
-    <button className='buttonContact'>
+    <a href="https://wa.me/5491166232246" target='_blank' className='buttonContact'>
       <div className='buttonContact__border'></div>
       <div className='buttonContact__content'>
         <WhatsappIcon className='buttonContact__icon'/>
         <p>Contactar</p>
       </div>
-    </button>
+    </a>
   )
 }

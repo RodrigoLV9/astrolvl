@@ -15,6 +15,8 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    width: min-content;
+    text-decoration: none;
 }
 .buttonContact__content{
     background-color:transparent;

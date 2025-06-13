@@ -1,7 +1,7 @@
 import '../../styles/socialCard.css'
-export const SocialCard=({name,info,icon})=>{
+export const SocialCard=({name,info,icon,link})=>{
     return(
-        <div className='socialCard'>
+        <a href={link} className='socialCard' target='_blank'>
             <svg width="0" height="0">
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -15,6 +15,6 @@ export const SocialCard=({name,info,icon})=>{
                 <h4>{name}: </h4>
                 <p>{info}</p>
             </div>
-        </div>
+        </a>
     )
 }
