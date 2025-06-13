@@ -18,6 +18,9 @@ footer{
 .footerTop__main{
     width:350px;
 }
+.footerTop__main>p{
+    color:var(--color-light2)
+}
 .footerTop__side{
     display:flex;
     justify-content:space-between

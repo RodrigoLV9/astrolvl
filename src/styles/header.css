@@ -18,7 +18,7 @@
 
 .header__nav ul>li{
     list-style: none;
-    padding-bottom:10px;
+    padding-bottom:5px;
     overflow: hidden;
 }
 .header__nav ul>li>a{
