@@ -26,13 +26,24 @@ import InfoRight from "./InfoRight.astro"
         -webkit-background-clip: text;
     }
     .info>h3{
-        color:var(--color-dark2)
+        color:var(--color-dark2);
+        
     }
     .info__content{
-        padding:50px 0;
+        margin:0 auto;
+        padding:50px 10px;
         display:flex;
         justify-content:center;
         text-align:start;
+        
+    }
+    @media screen and (max-width: 920px){
+        .info__content{
+            width: min-content;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     @media screen and (max-width: 768px){
         .info>h1{
@@ -43,10 +54,7 @@ import InfoRight from "./InfoRight.astro"
             margin:0 5px
         }
         .info__content{
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            flex-direction: column;
+            
         }
     }
     @media screen and (max-width:480px){
