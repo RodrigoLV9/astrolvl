@@ -5,7 +5,7 @@
     gap:20px;
     background-color:var(--color-dark1);
     padding:20px;
-    width:400px;
+    width:100%;
     border-radius:10px;
     cursor:pointer;
     transition:transform .3s;
