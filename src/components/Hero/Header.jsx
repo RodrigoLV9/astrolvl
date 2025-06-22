@@ -11,10 +11,10 @@ export const Header=()=>{
             <LogoMain/>
             <nav className="header__nav">
                 <ul className={`header__nav-ul ${isMenu ? 'header__nav-ul-disabled' : 'header__nav-ul-enabled'}`}>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
                     <li><a href="#faqs">FaQs</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
             <button className='menuToggle' onClick={handleMenu}>

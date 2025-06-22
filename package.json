@@ -17,14 +17,13 @@
     "@tsparticles/slim": "^3.8.1",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
-    "astro": "^5.8.1",
+    "astro": "^5.10.0",
     "astro-particles": "^2.10.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0",
     "react-icons": "^5.5.0",
     "tsparticles": "^3.8.1",
-    "yup": "^1.6.1",
     "zod": "^3.25.52"
   }
 }

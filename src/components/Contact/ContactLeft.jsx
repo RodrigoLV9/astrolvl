@@ -17,9 +17,9 @@ export const ContactLeft=()=>{
         setError({ 
             name:errors.name?.message,
             email:errors.email?.message,
-            message:errors.message?.message
+            message:errors.textarea?.message
         })
-        if(errors.name || errors.email || errors.message){
+        if(errors.name || errors.email || errors.textarea){
             setIsSubmitted(false)
         }
     },[errors])
@@ -53,8 +53,8 @@ export const ContactLeft=()=>{
                 </div>
                 <div className="form__group">
                     <label htmlFor="message">Mensaje</label>
-                    <textarea id="message" name="message" required {...register('message')} ></textarea>
-                    {errors.message && (
+                    <textarea id="message" name="message" required {...register('textarea')} ></textarea>
+                    {errors.textarea && (
                         <span className='errorMessage'>
                           <ErrorIcon className="errorMessage__icon"/>
                           <p>{error?.message}</p>
@@ -62,7 +62,7 @@ export const ContactLeft=()=>{
                     )}
                 </div>
                 <button className='formButton' type="submit" id='button'>
-                    <p>Send</p>
+                    <p>Enviar</p>
                     <SendIcon className='formButton__icon'/>
                 </button>
                 <input type="hidden" name="_captcha" value="false"/>

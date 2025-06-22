@@ -12,7 +12,7 @@ export const Footer=()=>{
                 </div>
                 <div className='footerTop__side'>
                     <div className="footerTop__contact">
-                        <h2>Contact</h2>
+                        <h2>Contacto</h2>
                         <ul>
                             {
                                 mainSocialNetworks.map((item,index)=>(
@@ -25,7 +25,7 @@ export const Footer=()=>{
                         </ul>
                     </div>
                     <div className='footerTop__follow'>
-                        <h2>Follow us</h2>
+                        <h2>Síguenos</h2>
                         <ul>
                             {
                                 socialNetworks.map((social,index)=>(
