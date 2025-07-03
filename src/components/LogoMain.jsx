@@ -1,5 +1,6 @@
 import '../styles/logoMain.css'
 export const LogoMain = () => {
+  console.log("sitio web 2")
   return (
     <div className="header__logo">
         <img src="/images/astrolvl-logo.png" alt="logo_main" className="header__logo-img" width="50" height="50"/>
